@@ -7,21 +7,33 @@
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./assets/css/style.css">
     
 </head>
 <body>
     
-<header><h1>Weather-Dashboard</h1></header>
+<header><h1>Weather Dashboard</h1></header>
    
 <div class="column" id="form">
-    <h2 class="card-header text-uppercase">Search for a City:</h2>
+    <h2 class="card-header text-uppercase">Search for a city:</h2>
     <form id="search-form" class="card-body">
         <div class="control">
-    <input type="text" placeholder="New York" class="input is-focused"/>
+    <input type="text" placeholder="New York" class="inputValue"/>
     </div>
-      <button type="submit" class="btn">Search</button>
+      <button type="button" class="btn">Search</button>
      </form>
+ </div>
+
+ <div class="display">
+     <h2 class="name"></h2>
+     <p class="desc"></p>
+     <p class="temp"></p>
+     <p class="wind"></p>
+     <p class=humidity></p>
+     <p class="uv-index"></p>
  </div>
           
     <script src="./assets/javascript/weather.js"></script>
