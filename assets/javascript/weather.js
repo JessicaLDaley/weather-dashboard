@@ -95,6 +95,8 @@ function updateSearchHistory(city) {
 
     }
   }
+
+  
 }
 
 
@@ -123,6 +125,30 @@ function updateSearch() {
       temp.innerHTML = "Temp: " + tempValue + "&#xb0; F";
       humidity.innerHTML = "Humidty: " + humidityValue + "%";
       wind.innerHTML = "Wind: " + windValue + " mph";
+    })
+
+    fetch("https://api.openweathermap.org/data/2.5/forecast?q=" + newSearch + "&appid=95ce02ab9c38e7546c35a13777f50cf6")
+    .then(response => response.json())
+    .then(data => {
+      let j = 1;
+      console.log(data);
+      for (let i = 0; i < data.list.length; i++) {
+        //console.log(data.list[i].dt_txt.substring(10,13))
+        if (data.list[i].dt_txt.substring(10, 13) == 12) {
+          console.log("found element " + data.list[i].dt_txt);
+          var cardTitle = document.querySelector("h5.card-title" + j); //document.getElementsByClassName("card-title"+j);
+          var cardText = document.querySelector("p.card-text" + j);//document.getElementsByClassName("card-text"+j);
+          var tempValue = data.list[i].main.temp;
+          tempValue = Math.round(((tempValue - 273.15) * 1.8) + 32);
+          cardTitle.innerHTML = data.list[i].dt_txt.substring(0, 11);
+          cardText.innerHTML = "Temp: " + tempValue + "&#xb0;" + "<br/> Wind: " + data.list[i].wind.speed + "<br/> Humidity: " + data.list[i].main.humidity;
+          j = j + 1;
+
+
+
+        }
+      }
+
     })
 }
 
@@ -161,15 +187,5 @@ function getHistoryValue() {
 
 
 getHistoryValue();
-
-
-
-
-
-
-
-
-
-
 
 
