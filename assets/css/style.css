@@ -5,7 +5,10 @@
 }
 #form{
     padding-top:8%;
-    padding-left:2%;
+    padding-left:1%;
+    text-align: left;
+    
+
 
 
 }
@@ -14,7 +17,7 @@
 
 }
 .btn{
-   width:15%;
+   width:200px;
    height:30px;
    margin-top:10px;
    background-color: rgb(72, 144, 212);
@@ -22,11 +25,14 @@
    border-radius: 7px;
     font-size: 15px;
    font-family: 'Francois One', sans-serif;
+  text-align: center;
+  padding-top:3px;
+  padding-bottom: 10px;
 
 }
 
 h1{
-    font-size:50px;
+    font-size:30px;
     border-width: 100%;
     background-color: rgb(4, 4, 37);
     background: rgb(2,0,36);
@@ -41,13 +47,46 @@ h1{
     }
 
 h2{
-    font-size:25px;
+    font-size:15px;
     font-family: 'Francois One', sans-serif;
     color:black;
+    width:200px;
+    margin-left:20px;
 }
 h3{
     font-family: 'Francois One', sans-serif;
 }
 .display{
     text-align: center;
+    margin-top:20px;
+}
+input{
+    width:200px;
+    border-radius: 7px;
+    border: solid 1px black;
+}
+.historyBtns{
+    margin-left:20px;
+    border-radius:7px ;
+  border:  1px; 
+  font-size: 15px;
+  width:200px;
+  padding:5px;
+  height:30px;
+  margin-top:5px;
+}
+.card{
+    height:6rem;
+    width:450px;
+    margin:5px;
+    font-size:7px;
+    padding:1px;
+    
+}
+.container{
+    width:100%;
+}
+
+.col{
+    width:100%;
 }
