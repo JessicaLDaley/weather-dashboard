@@ -7,6 +7,7 @@
     padding-top:8%;
     padding-left:1%;
     text-align: left;
+    margin-left:40%;
     
 
     
@@ -19,13 +20,13 @@
 
 }
 .btn{
-   width:200px;
-   height:30px;
+   width:300px;
+   height:50px;
    margin-top:10px;
    background-color: rgb(72, 144, 212);
    color:white;
    border-radius: 7px;
-   font-size: 15px;
+   font-size: 20px;
    font-family: 'Francois One', sans-serif;
    text-align: center;
    padding-top:3px;
@@ -34,7 +35,7 @@
 }
 
 h1{
-    font-size:20px;
+    font-size:50px;
     border-width: 100%;
     background-color: rgb(4, 4, 37);
     background: rgb(2,0,36);
@@ -46,14 +47,16 @@ h1{
 }
 
 h2{
-    font-size:15px;
+    font-size:20px;
     font-family: 'Francois One', sans-serif;
     color:black;
-    width:200px;
+    width:300px;
     margin-left:20px;
+    
 }
 h3{
     font-family: 'Francois One', sans-serif;
+    font-size: 20px;
 }
 .display{
     text-align: left;
@@ -61,10 +64,12 @@ h3{
     margin-left:20px;
     border:solid 1px black;
     padding:10px;
-    width:78%;
+    width:81%;
+    height:150px;
 }
 input{
-    width:200px;
+    width:300px;
+    height:50px;
     border-radius: 7px;
     border: solid 1px black;
 }
@@ -72,22 +77,22 @@ input{
     margin-left:20px;
     border-radius:7px ;
   border:  1px; 
-  font-size: 15px;
-  width:200px;
+  font-size:20px;
+  width:300px;
   padding:5px;
-  height:30px;
+  height:50px;
   margin-top:5px;
 }
 .card{
-    height:6rem;
-    width:450px;
+    height:10rem;
+    width:650px;
     margin:4px;
-    font-size:7px;
+    font-size:15px;
     padding:0px;
     background-color: rgb(19, 49, 66);
     color:white;
     font-weight: bold;
-    margin-right:100px;
+    margin-right:500px;
     
 
     
@@ -103,7 +108,8 @@ h3{
     text-align: left;
 }
 h5{
-    font-size: 9px;
+    font-size: 17px;
+    font-weight: bold;
 }
 img{
    width:  20px;
