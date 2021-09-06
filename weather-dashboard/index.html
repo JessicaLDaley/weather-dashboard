@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    
+        <div class="row">
+            <div class="col">
+
+                <div class="form">
+                    <h2 class="card-header text-uppercase">Search for a city:</h2>
+                    <form id="search-form" class="card-body">
+                        <div class="control">
+                            <input type="text" placeholder="New York" class="inputValue" />
+                        </div>
+                        <button type="button" class="btn">Search</button>
+                    </form>
+
+                    <div class="columns-1" id="hidden-div"></div>
+                    <div class="row1">
+                        <button type="button" id="historyBtn1" class="historyBtns"></button>
+                    </div>
+                    <div class="row2">
+                        <button type="button" id="historyBtn2" class="historyBtns"></button>
+                    </div>
+                    <div class="row3">
+                        <button type="button" id="historyBtn3" class="historyBtns"></button>
+                    </div>
+                    <div class="row4">
+                        <button type="button" id="historyBtn4" class="historyBtns"></button>
+                    </div>
+                    <div class="row5">
+                        <button type="button" id="historyBtn5" class="historyBtns"></button>
+                    </div>
+                    <div class="row6">
+                        <button type="button" id="historyBtn6" class="historyBtns"></button>
+                    </div>
+                    <div class="row7">
+                        <button type="button" id="historyBtn7" class="historyBtns"></button>
+                    </div>
+                    <div class="row8">
+                        <button type="button" id="historyBtn8" class="historyBtns"></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class=col>
+                <div class="row">
+                    <div class="display">
+                        <h3 class="city"></h3>
+                        <p class="temp" id='temp'></p>
+                        <p class="wind" id="wind"></p>
+                        <p class=humidity id="humidity"></p>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title1"></h5>
+                                <p class="card-text1">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card" >
+                            <div class="card-body">
+                                <h5 class="card-title2"></h5>
+                               <p class="card-text2">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card  my-1" >
+                            <div class="card-body">
+                                <h5 class="card-title3"></h5>
+                               <p class="card-text3">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card my-1">
+                            <div class="card-body">
+                                <h5 class="card-title4"></h5>
+                              <p class="card-text4">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card my-1">
+                            <div class="card-body">
+                                <h5 class="card-title5"></h5>
+                               <p class="card-text5">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+    <script src="./assets/javascript/weather.js"></script>
+</body>
+
+</html>
